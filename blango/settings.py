@@ -136,6 +136,11 @@ class Dev(Configuration):
 
     AUTH_USER_MODEL = "blango_auth.User"
 
+    # email
+    EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
+
+    ACCOUNT_ACTIVATION_DAYS = 7
+
     # Static files (CSS, JavaScript, Images)
     # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
